@@ -1,2 +1,4 @@
 evals*
 .git
+.DS_Store
+.gitignore
