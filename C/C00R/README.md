@@ -1,5 +1,4 @@
 # Rush 00 Files
----
 To compile the code make sure all the files are in the same directory.
 Run the following command:
 
