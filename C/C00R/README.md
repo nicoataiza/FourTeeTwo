@@ -9,16 +9,14 @@ Sample input:
 x = 5, y = 3
 
 Output (in terminal):
-
+```
 $ ./a.out
-
 o---o
 |   |
 |   |
 o---o
-
 $   
-
+```
 | TO-DO      | Status |
 | :---        | :---   |
 | Update make_edge/mid to use any char      | ❌        |
