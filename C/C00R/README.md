@@ -1,9 +1,5 @@
-Rush 00 Files
-# TO-DO: Changing the characters in the rush functions
-# 	 basically creates the other Rush0X files
-# TO-DO: Check for edge cases (?)
-# TO-DO: Check norminette (LOL)
-
+# Rush 00 Files
+---
 To compile the code make sure all the files are in the same directory.
 Run the following command:
 
@@ -21,3 +17,9 @@ o---o
 |   |
 o---o
 $ 
+
+| TO-DO      | Status |
+| :---        | :---   |
+| Update make_edge/mid to use any char      | ❌        |
+| Check for edge cases   | ❌         |
+| Check norminette | ❌ |
