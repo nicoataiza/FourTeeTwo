@@ -13,7 +13,6 @@ Output (in terminal):
 $ ./a.out
 o---o
 |   |
-|   |
 o---o
 $   
 ```
