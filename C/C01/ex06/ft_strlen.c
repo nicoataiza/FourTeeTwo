@@ -1,26 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cataiza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/25 16:32:08 by cataiza           #+#    #+#             */
-/*   Updated: 2024/01/26 19:20:14 by cataiza          ###   ########.fr       */
+/*   Created: 2024/01/25 20:54:26 by cataiza           #+#    #+#             */
+/*   Updated: 2024/01/26 19:30:27 by cataiza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
 
-void	ft_ft(int *nbr)
+int	ft_strlen(char *str)
 {
-	*nbr = 42;
+	int		c;
+
+	c = 0;
+	while (*str != '\0')
+	{
+		c++;
+		str++;
+	}
+	return (c);
 }
 /*
 int	main(void)
 {
-	int		n;
+	char s[27] = "abcdefghijklmnopqrstuvwxyz";
+	char *s_start = &s[0];
+	int n;
 
-	ft_ft(&n);
-	return (0);
+	n = ft_strlen(s_start);
+	printf("%d", n);
 }*/
