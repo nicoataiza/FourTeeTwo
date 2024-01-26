@@ -13,20 +13,12 @@ Output (in terminal):
 
 $ ./a.out
 
-
+o---o
+|   |
+|   |
 o---o
 
-
-|   |
-
-
-|   |
-
-
-o---o
-
-
-$ 
+$   
 
 | TO-DO      | Status |
 | :---        | :---   |
