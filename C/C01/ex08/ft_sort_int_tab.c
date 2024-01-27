@@ -6,17 +6,17 @@
 /*   By: cataiza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/26 19:38:25 by cataiza           #+#    #+#             */
-/*   Updated: 2024/01/26 20:02:12 by cataiza          ###   ########.fr       */
+/*   Updated: 2024/01/27 13:36:29 by cataiza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdio.h>
 
-void	swap(int *a,int *b)
+void	swap(int *a, int *b)
 {
 	int		temp;
-	
+
 	if (*a < *b)
 	{
 		temp = *a;
