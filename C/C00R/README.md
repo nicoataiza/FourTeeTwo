@@ -20,6 +20,6 @@ $
 ```
 | TO-DO      | Status |
 | :---        | :---   |
-| Update make_edge/mid to use any char      | ❌        |
+| Update make_edge/mid to use any char      | ✅        |
 | Check for edge cases   | ❌         |
 | Check norminette | ✅ |
