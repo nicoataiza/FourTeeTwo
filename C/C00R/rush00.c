@@ -6,7 +6,7 @@
 /*   By: cataiza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/26 22:44:16 by cataiza           #+#    #+#             */
-/*   Updated: 2024/01/26 23:56:55 by cataiza          ###   ########.fr       */
+/*   Updated: 2024/01/27 14:28:29 by cataiza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,18 +15,27 @@
 
 void	ft_putchar(char c);
 
+/* loop through x
+		if you're at the start
+			write start
+		elif you're at the end
+			write end
+		else
+			write middle
+*/
+
 void	write_line(int x, char start, char mid, char end)
 {
-	int 	ctr;
+	int		ctr;
 
 	ctr = -1;
 	while (ctr++ < x - 1)
 	{
 		if (ctr == 0)
 		{
-			ft_putchar(start); 
+			ft_putchar(start);
 		}
-		else if(ctr == x - 1)
+		else if (ctr == x - 1)
 		{
 			ft_putchar(end);
 		}
@@ -36,18 +45,19 @@ void	write_line(int x, char start, char mid, char end)
 		}
 	}
 }
-
-void	rush(int x, int y)
-{
-	/* loop through y
+/* Change first, mid, and end line accdg to rush0x
+	 loop through y
 			if you're at the start
 				write first line
 			elif you're at the end
-				write the middle
+				write the end
 			else
 				write middle line 
-	*/
-	int		ctr;
+*/
+
+void	rush(int x, int y)
+{
+	int	ctr;
 
 	ctr = -1;
 	while (ctr++ < y - 1)
@@ -55,7 +65,7 @@ void	rush(int x, int y)
 		if (ctr == 0)
 		{
 			write_line(x, 'o', '-', 'o');
-		} 
+		}
 		else if (ctr == y - 1)
 		{
 			write_line(x, 'o', '-', 'o');
