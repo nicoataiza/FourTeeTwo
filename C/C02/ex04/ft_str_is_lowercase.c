@@ -1,26 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_str_is_lowercase.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cataiza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/26 22:51:29 by cataiza           #+#    #+#             */
-/*   Updated: 2024/01/27 01:49:27 by cataiza          ###   ########.fr       */
+/*   Created: 2024/01/28 15:01:05 by cataiza           #+#    #+#             */
+/*   Updated: 2024/01/28 15:08:05 by cataiza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
 #include <stdio.h>
-#include "function.h"
 
+int	ft_str_is_lowercase(char *str)
+{
+	while (*str != '\0')
+	{
+		if (*str < 97 || *str > 122)
+		{
+			return (0);
+		}
+		str++;
+	}
+	return (1);
+}
+/*
 int	main(void)
 {
-	rush(5, 3);
-	write(1, "\n", 1);
-	rush(5, 1);
-	write(1, "\n", 1);
-	rush(1, 1);
-	write(1, "\n", 1);
-	rush(0, 0);
-	return (0);
+	int		test;
+
+	test = ft_str_is_lowercase("");
+	printf("%d", test);
+	printf("\n");
+	test = ft_str_is_lowercase("abcdefg");
+	printf("%d", test);
+	printf("\n");
+	test = ft_str_is_lowercase("abcABC123");
+	printf("%d", test);
+	printf("\n");
 }
+*/

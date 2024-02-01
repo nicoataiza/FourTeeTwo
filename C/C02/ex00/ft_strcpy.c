@@ -1,26 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cataiza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/26 22:51:29 by cataiza           #+#    #+#             */
-/*   Updated: 2024/01/27 01:49:27 by cataiza          ###   ########.fr       */
+/*   Created: 2024/01/28 12:37:35 by cataiza           #+#    #+#             */
+/*   Updated: 2024/02/01 18:38:24 by cataiza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
 #include <stdio.h>
-#include "function.h"
+#include <unistd.h>
 
+char	*ft_strcpy(char *dest, char *src)
+{
+	unsigned int	i;
+
+	i = 0;
+	while (src[i] != '\0')
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	dest[i] = '\0';
+	return (dest);
+}
+/*
 int	main(void)
 {
-	rush(5, 3);
-	write(1, "\n", 1);
-	rush(5, 1);
-	write(1, "\n", 1);
-	rush(1, 1);
-	write(1, "\n", 1);
-	rush(0, 0);
+	char	src[40];
+	char	dest[39];
+	
+	//memset(dest, '\0', sizeof(dest));
+	//ft_strcpy(src, "This is tutorialspoint.com");
+	ft_strcpy(dest,src);
+	printf("Final copy: %s\n", dest);
 	return (0);
-}
+}*/

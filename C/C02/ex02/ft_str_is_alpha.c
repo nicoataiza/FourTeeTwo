@@ -1,26 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cataiza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/26 22:51:29 by cataiza           #+#    #+#             */
-/*   Updated: 2024/01/27 01:49:27 by cataiza          ###   ########.fr       */
+/*   Created: 2024/01/28 14:40:23 by cataiza           #+#    #+#             */
+/*   Updated: 2024/01/28 15:35:38 by cataiza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
-#include <stdio.h>
-#include "function.h"
 
+#include <stdio.h>
+
+int	ft_str_is_alpha(char *str)
+{
+	while (*str != '\0')
+	{
+		if (*str < 65 || *str > 122)
+		{
+			return (0);
+		}
+		else if (*str >= 91 && *str <= 96)
+			return (0);
+		str++;
+	}
+	return (1);
+}
+/*
 int	main(void)
 {
-	rush(5, 3);
-	write(1, "\n", 1);
-	rush(5, 1);
-	write(1, "\n", 1);
-	rush(1, 1);
-	write(1, "\n", 1);
-	rush(0, 0);
+	int		test;
+	
+	test = ft_str_is_alpha("SampleText123123123123123123123123123123123123");
+	printf("%d", test);
+   	test = ft_str_is_alpha("Sample Text");
+	printf("%d", test);
 	return (0);
-}
+}*/

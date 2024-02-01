@@ -1,26 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cataiza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/26 22:51:29 by cataiza           #+#    #+#             */
-/*   Updated: 2024/01/27 01:49:27 by cataiza          ###   ########.fr       */
+/*   Created: 2024/01/28 15:16:56 by cataiza           #+#    #+#             */
+/*   Updated: 2024/02/01 13:22:19 by cataiza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <unistd.h>
 #include <stdio.h>
-#include "function.h"
 
+char	*ft_strlowcase(char *str)
+{
+	unsigned int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if (str[i] >= 'A' && str[i] <= 'Z')
+		{
+			str[i] = str[i] + 32;
+		}
+		i++;
+	}
+	return (str);
+}
+/*
 int	main(void)
 {
-	rush(5, 3);
-	write(1, "\n", 1);
-	rush(5, 1);
-	write(1, "\n", 1);
-	rush(1, 1);
-	write(1, "\n", 1);
-	rush(0, 0);
+	char test[] = "Hello World!";
+
+	ft_strlowcase(test);
+	printf("\"%s\"", test);
 	return (0);
-}
+}*/
